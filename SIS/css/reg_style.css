@@ -1,0 +1,60 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;  
+}
+
+.load{
+    animation: slide 2s;
+}
+.slider{   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    animation: slide 40s infinite;
+}
+
+@keyframes slide{
+    0% {
+        background-image: url('../img/1.jpg');
+    }
+    20% {
+        background-image: url('../img/2.jpg');
+    }
+    40% {
+        background-image: url('../img/3.jpg');
+    }
+    60% {
+        background-image: url('../img/4.jpg');
+    }
+    80% {
+        background-image: url('../img/5.jpg');
+    }
+    100% {
+        background-image: url('../img/6.jpg');
+    }
+}
+
+.reg_cont{
+    height: 700px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+   
+}
+
+.row{
+    padding: 20px;
+    background: #252525;
+    height: 700px;
+    filter: opacity(80%);
+}
+
+
+
+
+

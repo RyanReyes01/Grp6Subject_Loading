@@ -1,0 +1,131 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;  
+}
+
+.load{
+    animation: slide 2s;
+}
+.slider{   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    animation: slide 40s infinite;
+}
+
+@keyframes slide{
+    0% {
+        background-image: url('../img/1.jpg');
+    }
+    20% {
+        background-image: url('../img/2.jpg');
+    }
+    40% {
+        background-image: url('../img/3.jpg');
+    }
+    60% {
+        background-image: url('../img/4.jpg');
+    }
+    80% {
+        background-image: url('../img/5.jpg');
+    }
+    100% {
+        background-image: url('../img/6.jpg');
+    }
+}
+
+.user_card{
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 15px;
+    background: #BEBEBE;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 5px solid #464646;
+}
+
+.logo_container{
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #5D5C5C;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #B0B0B0;
+}
+
+.fas{
+    height: 24px;
+    width: 24px;
+}
+
+.form_container{
+    margin-top: 100px;
+}
+
+.login_btn{
+    width: 100%;
+    background: #5D5C5C !important;
+    color: white !important;
+}
+
+.login_btn:focus{
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.login_container{
+    padding: 0 2rem;
+}
+
+.input-group-text{
+    background: #5D5C5C !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user,
+.input_pass:focus{
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.custom-checkbox
+.custom-control-input:checked~.custom-control-label::before{
+    background-color: #5D5C5C !important;
+}
+
+
+/* #c0392b
+
+.reg_cont{
+    height: 700px;
+    width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 15px;
+    background: #2e2e2e;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 10px;
+    border: 5px solid #464646;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content = "with=device-width, initial-scale=1.0" >
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/sl_style.css">
+<!--	<script src="https://kit.fontawesome.com/e1d473941a.js" crossorigin="anonymous"></script> --> <!-- go to a fontawesome.com for icons -->
+</head>
+<body>
+<div class="header">
+        <img src="img\DCOMC_logo.png" alt="DCOMC"> 
+		<a class="home" href="">Daraga Community College </a>
+		<a href=""><i class="fas fa-search"></i></a>
+		<a class="notif" href=""><i class="fas fa-bell"></i></a>
+		<a href="dashboard.php?logout=true"><i class="fa fa-sign-out"></i></a>
+</div>
+	<div class="wrapper">
+		<div class="sidebar">
+			<h2>Dashboard</h2>
+			<ul>  <!-- put the site links to href="" -->
+				<li><a href="dashboard.php"><i class="fas fa-child"></i>Student Info</a></li>
+				<li><a href="dashboard.php"><i class="fas fa-chalkboard-teacher"></i>Faculty</a></li>
+				<li><a href="#"><i class="far fa-calendar"></i>Schedule</a></li>
+				<li><a href="dashboard.php"><i class="far fa-file-alt"></i>Grading</a></li>
+				<li><a href="dashboard.php"><i class="fas fa-book"></i>Subject Loading</a></li>
+				<li><a href="dashboard.php"><i class="fas fa-user-graduate"></i>Library</a></li>
+			</ul>
+			
+		</div>
+		<div class="main_content">
+			<div>
+                <h2 class="display">Subject Loading</h2>
+            </div>
+			<div class="form_bar">
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div>
+                                <label>Subject Code</label>
+                                <input type="text" name="subjectCode" id="subjectCode">
+                            </div>
+                            <div>
+                                <label>Subject Name</label>
+                                <input type="text" name="subjectName" id="subjectName">
+                            </div>
+                            <div>
+                                <label>Units</label>
+                                <input type="number" name="units" id="units">
+                            </div>
+                            <div  class="form-action-buttons">
+                                <input type="submit" value="Save">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </form>
+            </div>
+            <div class="table_bar">
+                <div>
+                    <h1>Subject List</h1>
+                </div>
+                        <table class="list" id="subjectList">
+                            <thead>
+                                <tr>
+                                    <th>Subject Code</th>
+                                    <th>Subject Name</th>
+                                    <th>Units</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+								
+                            </tbody>
+                        </table>
+            </div>
+		</div>
+	</div>
+</div>
+
+	
+
+</body>
+
+</html>
